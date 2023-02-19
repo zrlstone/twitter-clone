@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+# Set the RSpec command to use 'bundle exec rspec'
+cmd = 'bundle exec rspec'
+
+# If an argument is provided, use it as the path to the spec file
+if ARGV.first
+  path = ARGV.shift
+  cmd << " #{path}"
+end
+
+# Execute the RSpec command with any remaining arguments
+system(cmd, *ARGV)
