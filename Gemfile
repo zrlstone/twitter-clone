@@ -5,6 +5,7 @@ ruby "3.1.2"
 
 gem "bootsnap", require: false
 gem "cssbundling-rails"
+gem "devise", "~> 4.9"
 gem "jsbundling-rails"
 gem "jbuilder"
 gem "rails", "~> 7.0.4", ">= 7.0.4.2"
@@ -33,4 +34,5 @@ end
 group :test do
   gem "shoulda-matchers", "~> 5.3"
 end
+
 
